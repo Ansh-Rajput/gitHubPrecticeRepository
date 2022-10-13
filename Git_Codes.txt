@@ -29,6 +29,12 @@ git restore --staged <file name> --> It unstaged specified file.
 git checkout  -- <file name> --> It restore specified file contant of modified files according to previous commit. 
 git checkout  -f --> It restore contant of all modified files according to previous commit. 
 Note:- not work on files that are on staged area.
+git push -u origin master --> To push existiong githup rpository to gitHub. 
+Note:- pushRepo is an alias for this command.
+git config --global alias.st status --> It configurs "st" as an abrivation of status .
+
+
+
  
 
 
