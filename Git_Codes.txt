@@ -1,0 +1,40 @@
+git config --global user.name <Name> --> To set user name.
+git config --global user.email <email> --> To set user email.
+git status --> Important.
+git init --> To create .git folder.
+rm -rf .git --> To delete .git folder .
+git add {. / --a} --> To add all files in staging area or to track files.
+git commit -m "Your message" --> To commit file  or to save changes in .git folder.
+git clone <url of repositry> < optional - name of  folder > --> To copy files of a repositry.
+touch .gitignore --> It creates a file named .gitignore & git ignores all files and folders writen in .gitignore . 
+Note:- In .gitignore write *.log to ignore all files whoes file extention is .log and dir/ ignores all folder named dir or /dir/ ignores only root dir folder. and normaly git  ignores empty folders.
+git diff --> It compare staging area and working directory.
+git diff --staged --> It compare previus commit and corrent staging area.
+git commit -a -m "Your message" --> It directly commit tracked files by skiping staging area. but it not commit files that are not tracked(New files) by git.
+git rm <file name> --> It deletes specified file and staged it.
+git mv <file name> <new file name> --> It rename a file in git and also staged it.
+git rm --cached <file name> --> It untrack the specified file. and then you can write it's name in .gitignore file to ignore it.
+git log --> It show all commit's .
+git log -p --> It show all commit's with the changes in files.
+git log -n(integer) --> It show <n> number of commit.
+git log --stat --> It show all commit's with the changes in files in short form.
+git log --pretty=oneline --> It show all commit's in one line.
+git log --pretty=short --> It show all commit's with less information.
+git log --pretty=full --> It show all commit's with few more information then short.
+git log --since=2.days --> It show commit's of last 2 days.
+git log --pretty=format:"%h -- %an"--> It show commits's in your costom format . you can see all types of format in git log documantation.
+git log --amend --> It opens vim editor . then you can merge your work with orther commit . and also you can change its message.
+Note:- before open vim editor staged your changes. then in vin editor first type i then you can write in editor then to write your changes and quit press "esc" key and the write ":" then write "wq" .
+git restore --staged <file name> --> It unstaged specified file.
+git checkout  -- <file name> --> It restore specified file contant of modified files according to previous commit. 
+git checkout  -f --> It restore contant of all modified files according to previous commit. 
+Note:- not work on files that are on staged area.
+ 
+
+
+ 
+
+
+
+
+
